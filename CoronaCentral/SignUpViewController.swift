@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
@@ -28,6 +29,8 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        passwordTextField.isSecureTextEntry = true
+        confPasswordTextField.isSecureTextEntry = true
     }
     
     // perform this function when the user hits the register button
@@ -68,6 +71,16 @@ class SignUpViewController: UIViewController {
             controller.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
             present(controller, animated: true, completion: nil)
         }
+        
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak self] authResult, error in
+        guard let strongSelf = self else { return }
+            if error != nil {
+                let controllerError = UIAlertController(title: "Oops!", message: "Please fix your information!", preferredStyle: .alert)
+                controllerError.addAction(UIAlertAction(title: "ok", style: .default, handler: {(action) in print("FAILURE")}))
+                    strongSelf.present(controllerError, animated: true, completion: nil)
+                }
+            }
+
         
         
         let controller = UIAlertController(title: "Success", message: "Your account was successfully created! You may now login", preferredStyle: .alert)

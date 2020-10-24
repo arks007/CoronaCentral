@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0972F7A96CF0F3C8A2192E40 /* Pods_CoronaCentral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC585234B446AF25BB4300C5 /* Pods_CoronaCentral.framework */; };
 		2CEB03BB2544ACA600D65BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03BA2544ACA600D65BC9 /* AppDelegate.swift */; };
 		2CEB03BD2544ACA600D65BC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03BC2544ACA600D65BC9 /* SceneDelegate.swift */; };
 		2CEB03BF2544ACA600D65BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03BE2544ACA600D65BC9 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		2CEB03CA2544ACA700D65BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB03C82544ACA700D65BC9 /* LaunchScreen.storyboard */; };
 		2CEB03D22544AED300D65BC9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03D12544AED300D65BC9 /* AuthViewController.swift */; };
 		2CEB03D42544B8BE00D65BC9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03D32544B8BE00D65BC9 /* SignUpViewController.swift */; };
+		2CEB03D62544C6F800D65BC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB03D52544C6F800D65BC9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		2CEB03CB2544ACA700D65BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CEB03D12544AED300D65BC9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		2CEB03D32544B8BE00D65BC9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2CEB03D52544C6F800D65BC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B4897EC7F116BAE864A93F30 /* Pods-CoronaCentral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCentral.release.xcconfig"; path = "Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral.release.xcconfig"; sourceTree = "<group>"; };
+		BC585234B446AF25BB4300C5 /* Pods_CoronaCentral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaCentral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8C6B95E72C7881831D006C /* Pods-CoronaCentral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCentral.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0972F7A96CF0F3C8A2192E40 /* Pods_CoronaCentral.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				2CEB03B92544ACA600D65BC9 /* CoronaCentral */,
 				2CEB03B82544ACA600D65BC9 /* Products */,
+				B2879F5606279451832DBD9B /* Pods */,
+				38F8DA114A3D82C956E01FB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +80,28 @@
 				2CEB03CB2544ACA700D65BC9 /* Info.plist */,
 				2CEB03C32544ACA600D65BC9 /* CoronaCentral.xcdatamodeld */,
 				2CEB03D12544AED300D65BC9 /* AuthViewController.swift */,
+				2CEB03D52544C6F800D65BC9 /* GoogleService-Info.plist */,
 				2CEB03D32544B8BE00D65BC9 /* SignUpViewController.swift */,
 			);
 			path = CoronaCentral;
+			sourceTree = "<group>";
+		};
+		38F8DA114A3D82C956E01FB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC585234B446AF25BB4300C5 /* Pods_CoronaCentral.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2879F5606279451832DBD9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD8C6B95E72C7881831D006C /* Pods-CoronaCentral.debug.xcconfig */,
+				B4897EC7F116BAE864A93F30 /* Pods-CoronaCentral.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CEB03CE2544ACA700D65BC9 /* Build configuration list for PBXNativeTarget "CoronaCentral" */;
 			buildPhases = (
+				28954E875C196E4F8200DB39 /* [CP] Check Pods Manifest.lock */,
 				2CEB03B32544ACA600D65BC9 /* Sources */,
 				2CEB03B42544ACA600D65BC9 /* Frameworks */,
 				2CEB03B52544ACA600D65BC9 /* Resources */,
+				134FF7C03CDE57D9C75E9069 /* [CP] Embed Pods Frameworks */,
+				CABB01FA20C339F9E28F521C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,12 +166,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CEB03CA2544ACA700D65BC9 /* LaunchScreen.storyboard in Resources */,
+				2CEB03D62544C6F800D65BC9 /* GoogleService-Info.plist in Resources */,
 				2CEB03C72544ACA700D65BC9 /* Assets.xcassets in Resources */,
 				2CEB03C22544ACA600D65BC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		134FF7C03CDE57D9C75E9069 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28954E875C196E4F8200DB39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoronaCentral-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABB01FA20C339F9E28F521C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CEB03B32544ACA600D65BC9 /* Sources */ = {
@@ -294,6 +385,7 @@
 		};
 		2CEB03CF2544ACA700D65BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD8C6B95E72C7881831D006C /* Pods-CoronaCentral.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +404,7 @@
 		};
 		2CEB03D02544ACA700D65BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4897EC7F116BAE864A93F30 /* Pods-CoronaCentral.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

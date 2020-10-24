@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthViewController: UIViewController {
     @IBOutlet weak var AppLabel: UILabel!
@@ -25,6 +26,7 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        passwordTextField.isSecureTextEntry = true
         
         // Set the transparencies of all the components on the screen to 0 to make it invisible
         self.AppLabel.alpha = 0.0
@@ -61,11 +63,22 @@ class AuthViewController: UIViewController {
         }, completion: nil)
     }
     
+    // function to execute when the user hits the sign in button
     @IBAction func signIn(_ sender: Any) {
-        
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak self] authResult, error in
+          guard let strongSelf = self else { return }
+            if (error != nil) {
+                let controller = UIAlertController(title: "Sign In Error", message: "Please enter the correct username and/or password", preferredStyle: .alert)
+                controller.addAction(UIAlertAction(title: "ok", style: .default, handler: {(action) in self?.dismiss(animated: true, completion: nil)}))
+                self!.present(controller, animated: true, completion: nil)
+                return
+            }
+            strongSelf.performSegue(withIdentifier: "LoginSegue", sender: nil)
+        }
     }
     
     @IBAction func signUp(_ sender: Any) {
+        
     }
     
     /*

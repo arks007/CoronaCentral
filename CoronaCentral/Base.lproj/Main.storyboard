@@ -109,11 +109,39 @@
                         <outlet property="signInButton" destination="Z3C-FM-cB7" id="jaa-PR-REH"/>
                         <outlet property="signUpButton" destination="93S-6B-hix" id="hVV-rL-7eW"/>
                         <outlet property="signUpLabel" destination="97t-gB-IiL" id="jn8-Bh-5ul"/>
+                        <segue destination="4CF-qa-Utb" kind="presentation" identifier="LoginSegue" modalPresentationStyle="fullScreen" id="6nf-PQ-m6W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+            <point key="canvasLocation" x="155" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HF9-7F-gvu">
+            <objects>
+                <viewController id="4CF-qa-Utb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2UX-dh-ZdL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Eoj-uL-Xgb">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hAH-n6-LK8" firstAttribute="trailing" secondItem="Eoj-uL-Xgb" secondAttribute="trailing" constant="20" id="QKf-Sk-DBT"/>
+                            <constraint firstItem="hAH-n6-LK8" firstAttribute="bottom" secondItem="Eoj-uL-Xgb" secondAttribute="bottom" id="aFJ-GR-Ehu"/>
+                            <constraint firstItem="Eoj-uL-Xgb" firstAttribute="top" secondItem="hAH-n6-LK8" secondAttribute="top" id="tSV-F4-1AN"/>
+                            <constraint firstItem="Eoj-uL-Xgb" firstAttribute="leading" secondItem="hAH-n6-LK8" secondAttribute="leading" constant="20" id="ubm-ZC-FBt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hAH-n6-LK8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v9a-AD-yYL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUP-w7-RjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.768115942029" y="129.91071428571428"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6Ih-z6-KEU">
@@ -259,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kpT-Fd-4bg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="772.76785714285711"/>
+            <point key="canvasLocation" x="1035" y="852"/>
         </scene>
     </scenes>
 </document>
