@@ -14,6 +14,7 @@
 		2CEB03C52544ACA600D65BC9 /* CoronaCentral.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03C32544ACA600D65BC9 /* CoronaCentral.xcdatamodeld */; };
 		2CEB03C72544ACA700D65BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB03C62544ACA700D65BC9 /* Assets.xcassets */; };
 		2CEB03CA2544ACA700D65BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB03C82544ACA700D65BC9 /* LaunchScreen.storyboard */; };
+		2CEB03D22544AED300D65BC9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03D12544AED300D65BC9 /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2CEB03C62544ACA700D65BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CEB03C92544ACA700D65BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CEB03CB2544ACA700D65BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEB03D12544AED300D65BC9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2CEB03C82544ACA700D65BC9 /* LaunchScreen.storyboard */,
 				2CEB03CB2544ACA700D65BC9 /* Info.plist */,
 				2CEB03C32544ACA600D65BC9 /* CoronaCentral.xcdatamodeld */,
+				2CEB03D12544AED300D65BC9 /* AuthViewController.swift */,
 			);
 			path = CoronaCentral;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				2CEB03BF2544ACA600D65BC9 /* ViewController.swift in Sources */,
 				2CEB03C52544ACA600D65BC9 /* CoronaCentral.xcdatamodeld in Sources */,
+				2CEB03D22544AED300D65BC9 /* AuthViewController.swift in Sources */,
 				2CEB03BB2544ACA600D65BC9 /* AppDelegate.swift in Sources */,
 				2CEB03BD2544ACA600D65BC9 /* SceneDelegate.swift in Sources */,
 			);
