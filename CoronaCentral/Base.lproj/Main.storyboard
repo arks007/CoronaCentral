@@ -161,7 +161,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="OsB-sM-peH"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -179,6 +179,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-eM-zSH">
                                 <rect key="frame" x="382" y="120" width="20" height="22"/>
                                 <state key="normal" image="arrow.right" catalog="system"/>
+                                <connections>
+                                    <action selector="submit:" destination="w7M-F0-Jl4" eventType="touchUpInside" id="Z2k-xy-98G"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.14117647058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,6 +200,7 @@
                     <tabBarItem key="tabBarItem" title="map" image="map" catalog="system" id="m8h-r4-1Eo"/>
                     <connections>
                         <outlet property="mapView" destination="ZXL-cw-OVt" id="Lwv-dj-brF"/>
+                        <outlet property="queryTextField" destination="tEy-HH-dKR" id="Mvo-I4-52X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGQ-0r-B04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

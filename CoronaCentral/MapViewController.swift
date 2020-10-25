@@ -13,10 +13,47 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var mapView: MKMapView!
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
 
-
+    @IBOutlet weak var queryTextField: UITextField!
+    
+    @IBAction func submit(_ sender: Any) {
+        if(annotations.count != 0){
+            createAnnotations(locations: annotations)
+        }
+    }
+    
+    // list of results
+    var annotations = [
+        ["title": "Ruth's Chris Steak House", "latitude": 30.267150, "longitude": -97.743060],
+        ["title": "CVS Pharmacy", "latitude": 30.2673835, "longitude": -97.7434424],
+        ["title": "Gold's Gym", "latitude": 30.2675981, "longitude": -97.7414296],
+    ]
+    
+    func createAnnotations(locations: [[String: Any]]) {
+        for location in locations {
+            let annotations = MKPointAnnotation()
+            annotations.title = location["title"] as? String
+            annotations.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! CLLocationDegrees, longitude: location["longitude"] as! CLLocationDegrees)
+            mapView.addAnnotation(annotations)
+        }
+    }
+    
+    func clearAnnotations() {
+        mapView.removeAnnotations(mapView.annotations)
+        annotations = []
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        let annotation = view.annotation as? MKPointAnnotation
+        // print("lat: \(annotation!.coordinate.latitude), lng: \(annotation!.coordinate.longitude)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        queryTextField.placeholder = "McDonalds"
+        
+        queryTextField.backgroundColor = UIColor.white
+        
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
@@ -27,11 +64,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.delegate = self
         overrideUserInterfaceStyle = .dark
         
-        //let initialLocation = CLLocation(latitude: 30.2672, longitude: 97.7431)
         let initialLocation = CLLocation(latitude: 30.26715, longitude: -97.74306)
         mapView.centerToLocation(initialLocation)
-        
-        
     }
 }
 
