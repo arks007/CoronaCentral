@@ -19,6 +19,7 @@
 		2CEB03D42544B8BE00D65BC9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03D32544B8BE00D65BC9 /* SignUpViewController.swift */; };
 		2CEB03D62544C6F800D65BC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB03D52544C6F800D65BC9 /* GoogleService-Info.plist */; };
 		2CEB03D82544DB8100D65BC9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03D72544DB8100D65BC9 /* MapViewController.swift */; };
+		2CEB03DB25453A4A00D65BC9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB03DA25453A4A00D65BC9 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2CEB03D32544B8BE00D65BC9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2CEB03D52544C6F800D65BC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2CEB03D72544DB8100D65BC9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2CEB03DA25453A4A00D65BC9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B4897EC7F116BAE864A93F30 /* Pods-CoronaCentral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCentral.release.xcconfig"; path = "Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral.release.xcconfig"; sourceTree = "<group>"; };
 		BC585234B446AF25BB4300C5 /* Pods_CoronaCentral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaCentral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8C6B95E72C7881831D006C /* Pods-CoronaCentral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCentral.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCentral/Pods-CoronaCentral.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				2CEB03D52544C6F800D65BC9 /* GoogleService-Info.plist */,
 				2CEB03D32544B8BE00D65BC9 /* SignUpViewController.swift */,
 				2CEB03D72544DB8100D65BC9 /* MapViewController.swift */,
+				2CEB03DA25453A4A00D65BC9 /* DetailsViewController.swift */,
 			);
 			path = CoronaCentral;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				2CEB03D42544B8BE00D65BC9 /* SignUpViewController.swift in Sources */,
 				2CEB03BF2544ACA600D65BC9 /* ViewController.swift in Sources */,
 				2CEB03C52544ACA600D65BC9 /* CoronaCentral.xcdatamodeld in Sources */,
+				2CEB03DB25453A4A00D65BC9 /* DetailsViewController.swift in Sources */,
 				2CEB03D22544AED300D65BC9 /* AuthViewController.swift in Sources */,
 				2CEB03BB2544ACA600D65BC9 /* AppDelegate.swift in Sources */,
 				2CEB03BD2544ACA600D65BC9 /* SceneDelegate.swift in Sources */,

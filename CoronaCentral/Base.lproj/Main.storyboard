@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzx-7a-Gcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2212" y="438"/>
+            <point key="canvasLocation" x="2132" y="852"/>
         </scene>
         <!--map-->
         <scene sceneID="Jpz-zG-bkz">
@@ -201,11 +201,43 @@
                     <connections>
                         <outlet property="mapView" destination="ZXL-cw-OVt" id="Lwv-dj-brF"/>
                         <outlet property="queryTextField" destination="tEy-HH-dKR" id="Mvo-I4-52X"/>
+                        <segue destination="ufM-t3-adm" kind="presentation" identifier="DetailSegue" id="vSd-SM-BIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGQ-0r-B04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211.594202898551" y="-265.17857142857144"/>
+            <point key="canvasLocation" x="2132" y="130"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="oZg-0L-iIX">
+            <objects>
+                <viewController id="ufM-t3-adm" customClass="DetailsViewController" customModule="CoronaCentral" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5Z-Xm-eeX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5w-qN-VXG">
+                                <rect key="frame" x="20" y="37" width="374" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.14117647059999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="m5w-qN-VXG" firstAttribute="leading" secondItem="BeK-rN-esp" secondAttribute="leading" constant="20" id="6tO-3x-Vz9"/>
+                            <constraint firstItem="m5w-qN-VXG" firstAttribute="top" secondItem="BeK-rN-esp" secondAttribute="top" constant="37" id="T5H-sN-iQU"/>
+                            <constraint firstItem="BeK-rN-esp" firstAttribute="trailing" secondItem="m5w-qN-VXG" secondAttribute="trailing" constant="20" id="UQW-kQ-vEJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BeK-rN-esp"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="m5w-qN-VXG" id="kxa-ZJ-g2k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57q-Oh-w33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3276.811594202899" y="129.91071428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jU2-WT-wMt">
