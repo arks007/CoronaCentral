@@ -12,7 +12,8 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,6 +30,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         //let initialLocation = CLLocation(latitude: 30.2672, longitude: 97.7431)
         let initialLocation = CLLocation(latitude: 30.26715, longitude: -97.74306)
         mapView.centerToLocation(initialLocation)
+        
+        
     }
 }
 

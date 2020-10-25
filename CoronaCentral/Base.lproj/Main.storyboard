@@ -125,73 +125,83 @@
                         <outlet property="signInButton" destination="Z3C-FM-cB7" id="jaa-PR-REH"/>
                         <outlet property="signUpButton" destination="93S-6B-hix" id="hVV-rL-7eW"/>
                         <outlet property="signUpLabel" destination="97t-gB-IiL" id="jn8-Bh-5ul"/>
-                        <segue destination="4CF-qa-Utb" kind="presentation" identifier="LoginSegue" modalPresentationStyle="fullScreen" id="6nf-PQ-m6W"/>
+                        <segue destination="5Sk-OL-4Ht" kind="presentation" identifier="LoginSegue" modalPresentationStyle="fullScreen" id="T3c-B6-xxM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155" y="130"/>
         </scene>
-        <!--Map View Controller-->
-        <scene sceneID="HF9-7F-gvu">
-            <objects>
-                <viewController id="4CF-qa-Utb" customClass="MapViewController" customModule="CoronaCentral" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2UX-dh-ZdL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Eoj-uL-Xgb">
-                                <rect key="frame" x="0.0" y="98" width="414" height="707"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.13333333333333333" green="0.14117647058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="hAH-n6-LK8" firstAttribute="trailing" secondItem="Eoj-uL-Xgb" secondAttribute="trailing" id="DXC-Id-4ru"/>
-                            <constraint firstItem="hAH-n6-LK8" firstAttribute="bottom" secondItem="Eoj-uL-Xgb" secondAttribute="bottom" id="E5D-Ri-PKd"/>
-                            <constraint firstItem="Eoj-uL-Xgb" firstAttribute="leading" secondItem="hAH-n6-LK8" secondAttribute="leading" id="UQi-bn-3FX"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hAH-n6-LK8"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="v9a-AD-yYL"/>
-                    <connections>
-                        <outlet property="mapView" destination="Eoj-uL-Xgb" id="sX9-uf-cEY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TUP-w7-RjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1063.768115942029" y="129.91071428571428"/>
-        </scene>
-        <!--Item 2-->
+        <!--settings-->
         <scene sceneID="26R-qa-t9P">
             <objects>
                 <viewController id="Dye-jo-6Ez" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZD8-bB-7UJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.14117647058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Afg-U5-cXm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="EHg-9u-0du"/>
+                    <tabBarItem key="tabBarItem" title="settings" image="gear" catalog="system" id="EHg-9u-0du"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzx-7a-Gcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2944" y="471"/>
+            <point key="canvasLocation" x="2212" y="438"/>
         </scene>
-        <!--Item 1-->
+        <!--map-->
         <scene sceneID="Jpz-zG-bkz">
             <objects>
-                <viewController id="w7M-F0-Jl4" sceneMemberID="viewController">
+                <viewController id="w7M-F0-Jl4" customClass="MapViewController" customModule="CoronaCentral" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Stb-Yw-YMw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEy-HH-dKR">
+                                <rect key="frame" x="20" y="114" width="350" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="OsB-sM-peH"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NO3-a5-91C">
+                                <rect key="frame" x="142" y="60" width="131" height="32"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Vote"/>
+                                </segments>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZXL-cw-OVt">
+                                <rect key="frame" x="0.0" y="156" width="414" height="657"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-eM-zSH">
+                                <rect key="frame" x="382" y="120" width="20" height="22"/>
+                                <state key="normal" image="arrow.right" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.14117647058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NO3-a5-91C" firstAttribute="leading" secondItem="cwK-lr-Y2J" secondAttribute="leading" constant="142" id="JGD-gc-3eF"/>
+                            <constraint firstItem="tEy-HH-dKR" firstAttribute="top" secondItem="NO3-a5-91C" secondAttribute="bottom" constant="23" id="VLk-4d-T7n"/>
+                            <constraint firstItem="cwK-lr-Y2J" firstAttribute="trailing" secondItem="tEy-HH-dKR" secondAttribute="trailing" constant="44" id="VUz-R2-uH0"/>
+                            <constraint firstItem="tEy-HH-dKR" firstAttribute="leading" secondItem="cwK-lr-Y2J" secondAttribute="leading" constant="20" id="f2J-0L-IIQ"/>
+                            <constraint firstItem="Yfh-eM-zSH" firstAttribute="top" secondItem="cwK-lr-Y2J" secondAttribute="top" constant="76" id="i0e-Qz-v5c"/>
+                            <constraint firstItem="cwK-lr-Y2J" firstAttribute="trailing" secondItem="Yfh-eM-zSH" secondAttribute="trailing" constant="12" id="j2J-98-0us"/>
+                            <constraint firstItem="cwK-lr-Y2J" firstAttribute="trailing" secondItem="NO3-a5-91C" secondAttribute="trailing" constant="141" id="jSw-Eb-Q0F"/>
+                            <constraint firstItem="NO3-a5-91C" firstAttribute="top" secondItem="cwK-lr-Y2J" secondAttribute="top" constant="16" id="x7P-Vl-qeg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cwK-lr-Y2J"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="m8h-r4-1Eo"/>
+                    <tabBarItem key="tabBarItem" title="map" image="map" catalog="system" id="m8h-r4-1Eo"/>
+                    <connections>
+                        <outlet property="mapView" destination="ZXL-cw-OVt" id="Lwv-dj-brF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGQ-0r-B04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2944" y="-179"/>
+            <point key="canvasLocation" x="2211.594202898551" y="-265.17857142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jU2-WT-wMt">
@@ -200,7 +210,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hMS-8h-zcD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.14117647059999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.1333333333" green="0.14117647059999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.69019607839999997" green="0.36470588240000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="w7M-F0-Jl4" kind="relationship" relationship="viewControllers" id="6kO-oM-TYL"/>
@@ -209,7 +221,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsE-pj-eJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="144"/>
+            <point key="canvasLocation" x="1035" y="130"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6Ih-z6-KEU">
@@ -360,4 +372,9 @@
             <point key="canvasLocation" x="1034.7826086956522" y="851.78571428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="map" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
